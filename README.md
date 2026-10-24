@@ -14,13 +14,21 @@
 
 ```
     git clone https://github.com/TheIrishMan05/weblab4.git
-    cd weblab4
+    cd weblab4/lab4backend
+    ./gradlew build bootJar
+    cd ..
     docker-compose up --build
 ```
 ### Project design
 
++ Страница регистрации
+  
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/80df1177-1db0-45cc-84f4-b4a70119aed3" />
+
 + Страница авторизации
 
-+ Страница регистрации
+<img width="1912" height="1080" alt="image" src="https://github.com/user-attachments/assets/cda370e1-c60f-44c8-a2b6-e854ddf55325" />
 
 + Главная страница
+  
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/593e2b7f-cf07-4233-9a48-251e5428bddc" />
