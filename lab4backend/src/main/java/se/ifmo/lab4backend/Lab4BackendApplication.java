@@ -6,10 +6,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 @SpringBootApplication
-public class Lab4backendApplication {
+public class Lab4BackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Lab4backendApplication.class, args);
+		SpringApplication.run(Lab4BackendApplication.class, args);
 	}
 
 }

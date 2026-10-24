@@ -1,0 +1,10 @@
+**/node_modules
+**/dist
+**/.git
+**/.idea
+**/.vscode
+**/*.log
+**/coverage
+
+lab4frontend/node_modules
+lab4frontend/dist

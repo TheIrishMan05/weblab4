@@ -1,16 +1,18 @@
-FROM node:18 AS builder
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
+ENV NODE_ENV=development
+
 COPY lab4frontend/package*.json ./
 
-RUN npm install
+RUN npm ci --include=dev
 
-COPY ./lab4frontend ./
+COPY lab4frontend/ ./
 
 RUN npm run build
 
-FROM nginx:alpine
+FROM nginx:1.27-alpine
 
 COPY --from=builder /app/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf

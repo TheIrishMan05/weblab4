@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM eclipse-temurin:21-jdk
 WORKDIR /app
 COPY build/libs/lab4backend.jar app.jar
 EXPOSE 8000
